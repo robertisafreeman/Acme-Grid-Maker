@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            #container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            #formDiv {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            #form {
+                width: 300px;
+                height:100px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            #rowInput {
+                width: 50%;
+            }
+            #columnInput {
+                width: 50%;
+            }
+            #button {
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+
+        <h1>
+            Acme Grid Maker
+        </h1>
+        <br>
+        <div id="formDiv">
+            <form id="form">
+                <input id="rowInput" type="number" placeholder="Rows" >
+                <input id="columnInput" type="number" placeholder="Columns">
+                <button id="button" typer="button">Make Grid</button>
+            </form>
+        </div>
+        <div id="gridDiv">
+
+        </div>
+
+        </div>
+
+
+        <script>
+            const rowCount = document.querySelector("#rowInput");
+            const columnCount = document.querySelector("#columnInput");
+            const button = document.querySelector("#button");
+            const grid = document.querySelector("#gridDiv");
+
+            console.log(rowCount, columnCount, button, grid);
+            
+        </script>
+    </body>
+</html>
